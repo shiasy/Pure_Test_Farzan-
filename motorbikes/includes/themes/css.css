@@ -1,0 +1,44 @@
+#header-holder .bg-animation {
+    position: absolute;
+    opacity: 0.9;
+    left: 0%;
+    top: -20%;
+    width: 100%;
+    height: 108%;
+    background-image: url(../images/headbg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #756DE7;
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+    z-index: -1;
+}
+
+.fixheader{
+    background: rgba(131, 76, 235,0);
+}
+
+.carousel-caption {
+
+    position: absolute;
+    right: 15%;
+    top: 35%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+
+}
+@media(min-width: 1200px) {
+  
+}
+@media(min-width: 577px) and (max-width: 768px) {
+   
+
+}
+@media(max-width: 576px) {
+
+ 
+}

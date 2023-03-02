@@ -1,0 +1,30 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine on
+
+#  RewriteCond %{HTTPS} off
+#  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+  RewriteRule admin/img/(.+)/(.+) index.php?pages=admin/img&opearator=$1&color=$2 [QSA,L]
+  RewriteRule admin/img/(.+) index.php?pages=admin/img&opearator=$1 [QSA,L]
+
+
+  RewriteRule pop/(.+)/(.+) index.php?pages=pop&operator=$1&reqID=$2 [QSA,L]
+
+  RewriteRule appimg/(.+)/(.+) index.php?pages=app-img&opearator=$1&color=$2 [QSA,L]
+  RewriteRule appimg/(.+) index.php?pages=app-img&opearator=$1 [QSA,L]
+
+  RewriteRule img/(.+)/(.+) index.php?pages=img&opearator=$1&color=$2 [QSA,L]
+  RewriteRule img/(.+) index.php?pages=img&opearator=$1 [QSA,L]
+
+
+
+  RewriteRule details/(.+) index.php?pages=/details&ware_id=$1 [QSA,L]
+
+
+  RewriteRule index/([0-9]+)$ index.php?pages=/index&orderID=$1 [QSA,L]
+
+  RewriteRule ^([a-zA-Z0-9-/+]+)$ index.php?pages=$1 [QSA,L]
+
+  
+</IfModule>

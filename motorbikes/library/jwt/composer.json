@@ -1,0 +1,27 @@
+{
+	"name" : "f21/jwt",
+	"description" : "JWT (JSON Web Tokens) for PHP",
+	"type" : "library",
+	"authors" : [{
+			"name" : "Francis Chuang",
+			"email" : "francis.chuang@gmail.com",
+			"role" : "Developer"
+		}
+	],
+	"keywords" : [
+		"jwt",
+		"json web tokens"
+	],
+	"homepage" : "https://github.com/F21/jwt",
+	"license" : [
+		"MIT"
+	],
+	"require" : {
+		"php" : ">=5.4.8"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"JWT" : "JWT/"
+		}
+	}
+}

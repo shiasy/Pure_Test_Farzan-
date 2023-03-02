@@ -1,0 +1,3 @@
+<?php
+
+SafeData::redirect('admin/');
